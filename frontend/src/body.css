@@ -1,0 +1,26 @@
+/* Carousel Image Styles */
+.carousel-img {
+    width: 100%;
+    height: 550px; /* Set a medium height for the carousel */
+    object-fit: fill;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Slower transition */
+}
+
+/* Hover effect to indicate clickability */
+.carousel-img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    opacity: 0.9; /* Slight fade effect */
+    cursor: pointer;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    background-color: #ff5722;
+    transition: background-color 0.5s ease; /* Smooth transition for pagination */
+}
+
+/* Swiper Wrapper */
+.mySwiper {
+    width: 100%;
+    height: auto; /* Adjusting height based on content */
+}

@@ -1,0 +1,39 @@
+/* Footer Styles */
+.footer {
+    background-color: #F5DFC1; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    position: relative;
+    width: 100%;
+   /* bottom: 0; */
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #d1d5db; /* Light gray hover effect */
+    transform: scale(1.2);
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 10px;
+}
+.contact-info :hover{
+    color: #d1d5db;
+    
+}
