@@ -144,7 +144,7 @@
     .nav-links {
       display: none;
       flex-direction: column;
-      background: #1a202c;
+      
       position: absolute;
       top: 60px;
       left: 0;

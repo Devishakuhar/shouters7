@@ -1,0 +1,95 @@
+.stats-container {
+  position: relative;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  background: url("/3d black trns_.png") no-repeat center center/cover;
+}
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(223, 211, 211, 0.5); /* Adjust transparency */
+  backdrop-filter: blur(5px); /* Smooth glass effect */
+}
+
+.stats-heading {
+  color:#002060;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1; /* Ensure text is above the overlay */
+}
+  .highlight {
+    color: #002060;
+  }
+  
+  .stats-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+  z-index: 1;
+  }
+  
+  .stats-card {
+    background: rgba(255, 253, 254, o.1); /* Semi-transparent card background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .stats-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .stats-card h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #002060;
+  }
+  
+  .stats-card p {
+    font-size: 1rem;
+    color: #5f6b80;
+    margin-top: 5px;
+  }
+  
+  /* 🔥 Responsive Design */
+  @media (max-width: 1024px) {
+    .stats-heading {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .stats-heading {
+      font-size: 1.6rem;
+    }
+  
+    .stats-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stats-card {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stats-heading {
+      font-size: 1.4rem;
+    }
+  
+    .stats-card {
+      width: 100%;
+    }
+  }
+  

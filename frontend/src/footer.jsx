@@ -30,6 +30,10 @@ const Footer = () => {
           <FontAwesomeIcon icon={faEnvelope} /> info@7shouters.com
         </p>
       </div>
+      {/* Copyright Section */}
+      <div className="copyright">
+        <p>© 2024 | 7SHOUTERS MEDIA | All Rights Reserved.</p>
+      </div>
     </footer>
   );
 };

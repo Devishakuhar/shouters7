@@ -1,0 +1,137 @@
+/* customer.css */
+.customer-review {
+    padding: 40px 20px;
+    background-color: #eae9df;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+}
+
+/* Small floating dots */
+.customer-review .floating-dots {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: rgb(73, 207, 241);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: floatDots 5s infinite alternate ease-in-out;
+}
+
+/* Creating multiple dots */
+.customer-review .dot-1 { top: 10%; left: 15%; animation-duration: 6s; }
+.customer-review .dot-2 { top: 12%; left: 70%; animation-duration: 5s; }
+.customer-review .dot-3 { top: 50%; left: 40%; animation-duration: 7s; }
+.customer-review .dot-4 { bottom: 5%; left: 60%; animation-duration: 5s; }
+.customer-review .dot-5 { bottom:4%; left: 90%; animation-duration: 6s; }
+
+@keyframes floatDots {
+    0% {
+        transform: translateY(0px) translateX(0px);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-20px) translateX(10px);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(10px) translateX(-10px);
+        opacity: 0.8;
+    }
+}
+
+/* Review Container */
+.review-container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Review Text Section */
+.review-text {
+    margin-bottom: 30px;
+}
+
+.section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.testimonial-description {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Review Card */
+.review-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Blockquote Styling */
+blockquote {
+    font-style: italic;
+    color: #444;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+blockquote:hover {
+    color: rgb(215, 92, 50);
+    transform: translateX(10px);
+}
+
+/* Customer Info */
+.customer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* User Icon */
+.customer-icon {
+    color: #bbb;
+    font-size: 60px;
+}
+
+/* Customer Name */
+.customer-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Customer Company */
+.customer-company {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .review-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .review-card {
+        max-width: 90%;
+    }
+}
