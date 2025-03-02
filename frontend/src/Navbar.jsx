@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon, faCog } from "@fortawesome/free-solid-svg-icons";
-import "./navbar.css"; // Importing the CSS file
+import "./Navbar.css"; // Importing the CSS file
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
