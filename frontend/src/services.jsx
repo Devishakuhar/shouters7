@@ -1,5 +1,5 @@
 import React from "react";
-import "./Services.css";
+import "./services.css";
 import { FaHospital, FaCogs, FaUniversity, FaBullhorn, FaShoppingCart, FaLaptopCode, FaFilm, FaPlane, FaTruck } from "react-icons/fa";
 
 const services = [
